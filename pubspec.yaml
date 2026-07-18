@@ -1,0 +1,40 @@
+name: tubes
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^17.3.0
+  image_picker: ^1.2.2
+  mobile_scanner: ^7.2.0
+  pdf: ^3.13.0
+  printing: ^5.15.0
+  qr_flutter: ^4.1.0
+  supabase_flutter: ^2.16.0
+  cupertino_icons: ^1.0.6
+  intl: ^0.20.3
+
+  # ==========================================================
+  # TAMBAHAN UNTUK API EKSTERNAL (WEATHER, MAPS, WORLD TIME)
+  # ==========================================================
+  http: ^1.2.0                # Untuk menembak OpenWeatherMap & WorldTimeAPI
+  flutter_map: ^6.1.0         # Untuk merender peta OpenStreetMap gratisan
+  latlong2: ^0.9.0            # Untuk membaca koordinat peta (Latitude & Longitude)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # MENGAKTIFKAN ASSETS: Agar gambar latar belakang logistik Anda tidak eror merah lagi
+  assets:
+    - assets/images/
